@@ -13,7 +13,6 @@
             vulkan-loader
         ];
       LD_LIBRARY_PATH="${pkgs.wayland}/lib:${pkgs.libxkbcommon}/lib:${pkgs.vulkan-loader}/lib:${pkgs.vulkan-validation-layers}/lib";
-      VULKAN_SDK = "${pkgs.vulkan-headers}";
       VK_LAYER_PATH = "${pkgs.vulkan-validation-layers}/share/vulkan/explicit_layer.d";
       };
     }
